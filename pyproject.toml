@@ -8,6 +8,7 @@ dependencies = [
     "duckdb",
     "panda_data",
     "python-dotenv>=1.0.0",
+    "panda_data_tools"
 ]
 
 [project.optional-dependencies]
