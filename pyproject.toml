@@ -1,6 +1,6 @@
 [project]
 name = "panda-data-tools"
-version = "1.0.0"
+version = "0.0.1"
 description = "PandaAI 金融数据 API 的 LLM Tool 封装层，将 38 个数据查询方法封装为符合 function calling 规范的 tools。"
 requires-python = ">=3.12"
 dependencies = [
