@@ -1,0 +1,31 @@
+[project]
+name = "panda-data-tools"
+version = "1.0.0"
+description = "PandaAI 金融数据 API 的 LLM Tool 封装层，将 38 个数据查询方法封装为符合 function calling 规范的 tools。"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas",
+    "duckdb",
+    "panda_data",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "hypothesis",
+    "duckdb",
+    "openpyxl",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: 需要真实 PandaAI API 与凭证的环境变量",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["panda_tools"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
