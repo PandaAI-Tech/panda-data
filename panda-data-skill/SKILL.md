@@ -1,6 +1,6 @@
 ---
 name: panda-data
-version: 2.0.0
+version: 1.0.0
 description: PandaAI 金融数据 API 的 LLM Tool 封装，35 个数据查询方法，支持行情、财务、期货等
 author: PandaAI
 homepage: https://github.com/pandaai/panda-data
