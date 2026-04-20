@@ -150,6 +150,7 @@ panda-data/
 ├── panda-data-skill/       # ClawHub 技能包（发布用）
 │   ├── SKILL.md
 │   ├── README.md
+│   ├── INSTALL_GUIDE.md    # OpenClaw / panda_data 安装指南（对标 Tushare 文档结构）
 │   ├── CHANGELOG.md
 │   ├── api_reference.md
 │   └── scripts/

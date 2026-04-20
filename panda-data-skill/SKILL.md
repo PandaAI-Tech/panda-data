@@ -1,5 +1,5 @@
 ---
-name: panda-data
+name: panda-data-skill
 version: 1.0.0
 description: PandaAI 金融数据 API 的 LLM Tool 封装，35 个数据查询方法，支持行情、财务、期货等
 author: PandaAI
@@ -31,7 +31,8 @@ result = registry.call_tool("get_market_data", start_date="20250101", end_date="
 ## Key Notes
 
 - 需配置环境变量 `PANDA_DATA_USERNAME` 和 `PANDA_DATA_PASSWORD` 作为 API 凭证
-- `panda_data` 包需通过本地 whl 单独安装
+- 需安装 PandaAI SDK：`pip install panda_data`（内网/离线时可用官方提供的 whl）
+- 完整安装步骤（ClawHub、pip、凭证）见同目录 **[INSTALL_GUIDE.md](INSTALL_GUIDE.md)**
 - 日期格式统一为 YYYYMMDD（如 20250101）
 - 股票代码格式：A股 `000001.SZ`、指数 `000300.SH`、期货 `A2501.DCE`
 
